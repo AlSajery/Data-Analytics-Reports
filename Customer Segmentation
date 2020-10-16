@@ -1,0 +1,91 @@
+# Data-Analytics-Reports
+
+Customer Segmentation
+
+Customer Segmentation is one the most important applications of unsupervised learning. Using clustering techniques, companies can identify the several segments of customers allowing them to target the potential user base. In this machine learning project, we will make use of K-means clustering which is the essential algorithm for clustering unlabeled dataset.
+
+{{< figure src="/images/pic6.jpg" >}}
+
+In the first step of this data science project, we will perform data exploration. We will import the essential packages required for this role and then read our data. Finally, we will go through the input data to gain necessary insights about it.
+
+Code:
+
+customer_data=read.csv("/home/dataflair/Mall_Customers.csv")
+str(customer_data)
+
+names(customer_data)
+
+Output:
+
+{{< figure src="/images/cluster1.png" >}}
+
+Customer Gender Visualization
+In this, we will create a barplot and a piechart to show the gender distribution across our customer_data dataset.
+
+Code Screenshot:
+
+{{< figure src="/images/code1.png" >}}
+
+Output:
+
+{{< figure src="/images/cluster5.png" >}}
+
+From the above barplot, we observe that the number of females is higher than the males. Now, let us visualize a pie chart to observe the ratio of male and female distribution.
+
+Code Screenshot:
+
+{{< figure src="/images/code2.png" >}}
+
+Output:
+
+{{< figure src="/images/cluster7.png" >}}
+
+From the above graph, we conclude that the percentage of females is 56%, whereas the percentage of male in the customer dataset is 44%.
+
+Code Screenshot:
+
+{{< figure src="/images/code3.png" >}}
+
+Output:
+
+{{< figure src="/images/cluster13.png" >}}
+
+From the above visualization, we observe that there is a distribution of 6 clusters as follows –
+Cluster 6 and 4 – These clusters represent the customer_data with the medium income salary as well as the medium annual spend of salary.
+Cluster 1 – This cluster represents the customer_data having a high annual income as well as a high annual spend.
+Cluster 3 – This cluster denotes the customer_data with low annual income as well as low yearly spend of income.
+Cluster 2 – This cluster denotes a high annual income and low yearly spend.
+Cluster 5 – This cluster represents a low annual income but its high yearly expenditure.
+
+Code Screenshot:
+
+{{< figure src="/images/code4.png" >}}
+
+
+Output:
+
+{{< figure src="/images/cluster14.png" >}}
+
+Code Screenshot:
+
+{{< figure src="/images/code5.png" >}}
+
+
+
+Output:
+
+{{< figure src="/images/cluster15.png" >}}
+
+Cluster 4 and 1 – These two clusters consist of customers with medium PCA1 and medium PCA2 score.
+
+Cluster 6 – This cluster represents customers having a high PCA2 and a low PCA1.
+
+Cluster 5 – In this cluster, there are customers with a medium PCA1 and a low PCA2 score.
+
+Cluster 3 – This cluster comprises of customers with a high PCA1 income and a high PCA2.
+
+Cluster 2 – This comprises of customers with a high PCA2 and a medium annual spend of income.
+
+Summary
+In this data science project, we went through the customer segmentation model. We developed this using a class of machine learning known as unsupervised learning. Specifically, we made use of a clustering algorithm called K-means clustering. We analyzed and visualized the data and then proceeded to implement our algorithm.
+
